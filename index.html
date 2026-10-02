@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>傳說對決 · 十週年｜概念改版 Demo</title>
+<meta name="description" content="《Garena 傳說對決》官方站概念改版練習：最新消息、英雄與造型、遊戲資料、電競賽事、影音與下載。非官方站點，設計語言取自 design-system-extraction-2026-10（ZCode 暗色 Token 體系）。">
+<meta property="og:title" content="傳說對決 · 十週年｜概念改版 Demo">
+<meta property="og:description" content="十週年慶典開跑：Red Bull 聯名、傳說聖典第九十四篇章、WaVe波動限時重返——113 位英雄，一戰再戰。">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://cdngarenanow-a.akamaihd.net/mgames/kgcenter/tw/client/GameData/Hero/112/Teeri-new.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23F59E0B'/%3E%3Ctext x='16' y='22' font-size='16' font-weight='700' text-anchor='middle' fill='%23161616' font-family='sans-serif'%3E傳%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ================= Header ================= -->
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a class="brand" href="#top" aria-label="回到頁首">
+      <span class="brand-mark" aria-hidden="true">傳</span>
+      <span class="brand-text">
+        <strong>傳說對決</strong>
+        <span class="brand-sub">ARENA OF VALOR</span>
+      </span>
+    </a>
+
+    <nav class="main-nav" aria-label="主選單">
+      <a class="nav-link" href="#news">最新消息</a>
+      <a class="nav-link" href="#heroes">英雄</a>
+      <div class="nav-drop">
+        <button class="nav-link drop-toggle" type="button" aria-expanded="false">遊戲資料<svg class="caret" viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+        <div class="drop-panel" role="menu">
+          <a role="menuitem" href="https://moba.garena.tw/game/locate" target="_blank" rel="noopener">新手引導</a>
+          <a role="menuitem" href="https://moba.garena.tw/game/synopsis" target="_blank" rel="noopener">遊戲簡介</a>
+          <a role="menuitem" href="https://moba.garena.tw/game/heroes" target="_blank" rel="noopener">英雄列表</a>
+          <a role="menuitem" href="https://moba.garena.tw/game/props" target="_blank" rel="noopener">裝備列表</a>
+          <a role="menuitem" href="https://moba.garena.tw/game/katha" target="_blank" rel="noopener">奧義列表</a>
+          <a role="menuitem" href="https://moba.garena.tw/game/skill" target="_blank" rel="noopener">挑戰者技能</a>
+        </div>
+      </div>
+      <div class="nav-drop">
+        <button class="nav-link drop-toggle" type="button" aria-expanded="false">電競<svg class="caret" viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></button>
+        <div class="drop-panel" role="menu">
+          <a role="menuitem" href="https://esports.moba.garena.tw/gcs" target="_blank" rel="noopener">GCS 職業聯賽</a>
+          <a role="menuitem" href="https://esports.moba.garena.tw/city" target="_blank" rel="noopener">傳說城市賽</a>
+          <a role="menuitem" href="https://esports.moba.garena.tw/campus/rule" target="_blank" rel="noopener">校園傳說</a>
+          <a role="menuitem" href="https://acsesports.moba.garena.tw/" target="_blank" rel="noopener">ACS 校園聯賽</a>
+          <a role="menuitem" href="https://moba.garena.tw/news/show/4677" target="_blank" rel="noopener">傳說國際賽</a>
+          <a role="menuitem" href="https://moba.garena.tw/news/show/5404" target="_blank" rel="noopener">社群自辦賽事</a>
+        </div>
+      </div>
+      <a class="nav-link" href="#esports">影音</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="icon-ghost" href="https://www.facebook.com/AoVTW/" target="_blank" rel="noopener" aria-label="官方粉絲團">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M9.1 16V8.7h2.4l.4-2.8H9.1V4.1c0-.8.2-1.4 1.4-1.4h1.5V.1C11.7.1 10.8 0 9.8 0 7.6 0 6.1 1.3 6.1 3.8v2.1H3.7v2.8h2.4V16h3z" fill="currentColor"/></svg>
+      </a>
+      <a class="icon-ghost" href="https://www.youtube.com/channel/UCeMjhoCCvujpObnt6yeZeNg" target="_blank" rel="noopener" aria-label="官方 YouTube">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M15.7 4.6a2 2 0 0 0-1.4-1.4C13 2.8 8 2.8 8 2.8s-5 0-6.3.4A2 2 0 0 0 .3 4.6 21 21 0 0 0 0 8c0 1.2.1 2.3.3 3.4a2 2 0 0 0 1.4 1.4c1.3.4 6.3.4 6.3.4s5 0 6.3-.4a2 2 0 0 0 1.4-1.4c.2-1.1.3-2.2.3-3.4 0-1.2-.1-2.3-.3-3.4ZM6.4 10.6V5.4L10.6 8l-4.2 2.6Z" fill="currentColor"/></svg>
+      </a>
+      <a class="btn-pill btn-white" href="#download">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M11.6 8.5c0-1.5 1.2-2.2 1.3-2.3-.7-1-1.8-1.2-2.2-1.2-.9-.1-1.8.5-2.3.5-.5 0-1.2-.5-2-.5-1 0-2 .6-2.5 1.5-1.1 1.9-.3 4.7.8 6.2.5.8 1.1 1.6 1.9 1.6.8 0 1.1-.5 2-.5s1.2.5 2 .5 1.4-.8 1.9-1.5c.6-.9.8-1.7.9-1.8-.1 0-1.8-.7-1.8-2.5ZM10.1 3.8c.4-.5.7-1.2.6-1.9-.6 0-1.4.4-1.8.9-.4.5-.7 1.2-.6 1.9.7 0 1.4-.4 1.8-.9Z" fill="currentColor"/></svg>
+        下載遊戲
+      </a>
+      <button class="nav-burger" id="navBurger" type="button" aria-label="開啟選單" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- 移動端面板 -->
+  <div class="mobile-panel" id="mobilePanel" hidden>
+    <a class="m-link" href="#news">最新消息</a>
+    <a class="m-link" href="#heroes">英雄</a>
+    <a class="m-link" href="#esports">影音</a>
+    <details class="m-group">
+      <summary>遊戲資料</summary>
+      <a href="https://moba.garena.tw/game/locate" target="_blank" rel="noopener">新手引導</a>
+      <a href="https://moba.garena.tw/game/synopsis" target="_blank" rel="noopener">遊戲簡介</a>
+      <a href="https://moba.garena.tw/game/heroes" target="_blank" rel="noopener">英雄列表</a>
+      <a href="https://moba.garena.tw/game/props" target="_blank" rel="noopener">裝備列表</a>
+      <a href="https://moba.garena.tw/game/katha" target="_blank" rel="noopener">奧義列表</a>
+      <a href="https://moba.garena.tw/game/skill" target="_blank" rel="noopener">挑戰者技能</a>
+    </details>
+    <details class="m-group">
+      <summary>電競</summary>
+      <a href="https://esports.moba.garena.tw/gcs" target="_blank" rel="noopener">GCS 職業聯賽</a>
+      <a href="https://esports.moba.garena.tw/city" target="_blank" rel="noopener">傳說城市賽</a>
+      <a href="https://esports.moba.garena.tw/campus/rule" target="_blank" rel="noopener">校園傳說</a>
+      <a href="https://acsesports.moba.garena.tw/" target="_blank" rel="noopener">ACS 校園聯賽</a>
+      <a href="https://moba.garena.tw/news/show/4677" target="_blank" rel="noopener">傳說國際賽</a>
+      <a href="https://moba.garena.tw/news/show/5404" target="_blank" rel="noopener">社群自辦賽事</a>
+    </details>
+    <a class="btn-pill btn-white m-cta" href="#download">下載遊戲</a>
+  </div>
+</header>
+
+<main>
+  <!-- ================= Hero KV ================= -->
+  <section class="hero" aria-label="十週年主視覺">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow mono">GCS 2026 SUMMER · 10TH ANNIVERSARY</p>
+        <h1>傳說對決</h1>
+        <p class="hero-subline">十週年 · 競逐榮光</p>
+        <p class="hero-desc">十週年慶典開跑——Red Bull 聯名、傳說聖典第九十四篇章、WaVe波動限時重返。113 位英雄，5v5 競技場，一戰再戰。</p>
+        <div class="hero-ctas">
+          <a class="btn-pill btn-white btn-lg" href="#download">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M11.6 8.5c0-1.5 1.2-2.2 1.3-2.3-.7-1-1.8-1.2-2.2-1.2-.9-.1-1.8.5-2.3.5-.5 0-1.2-.5-2-.5-1 0-2 .6-2.5 1.5-1.1 1.9-.3 4.7.8 6.2.5.8 1.1 1.6 1.9 1.6.8 0 1.1-.5 2-.5s1.2.5 2 .5 1.4-.8 1.9-1.5c.6-.9.8-1.7.9-1.8-.1 0-1.8-.7-1.8-2.5ZM10.1 3.8c.4-.5.7-1.2.6-1.9-.6 0-1.4.4-1.8.9-.4.5-.7 1.2-.6 1.9.7 0 1.4-.4 1.8-.9Z" fill="currentColor"/></svg>
+            立即下載
+          </a>
+          <a class="btn-ghost btn-lg" href="#news">查看最新消息</a>
+        </div>
+        <ul class="hero-stats mono" aria-label="遊戲速覽">
+          <li><span class="stat-num">113</span><span class="stat-label">位英雄</span></li>
+          <li><span class="stat-num">5V5</span><span class="stat-label">經典對戰</span></li>
+          <li><span class="stat-num">FREE</span><span class="stat-label">免費遊玩</span></li>
+        </ul>
+      </div>
+      <div class="hero-art" aria-hidden="false">
+        <span class="badge badge-amber hero-badge">十週年慶典</span>
+        <div class="hero-art-glow" aria-hidden="true"></div>
+        <img class="hero-art-img" src="https://cdngarenanow-a.akamaihd.net/mgames/kgcenter/tw/client/GameData/Hero/112/Teeri-topbanner.jpg" alt="英雄橫幅：緹莉——昭心之光" referrerpolicy="no-referrer" loading="eager">
+        <div class="hero-art-chip chip-a mono">SKIN · 昭心之光</div>
+        <div class="hero-art-chip chip-b mono">HERO No.112 緹莉</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 最新消息 ================= -->
+  <section class="section" id="news">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow mono">NEWS</p>
+          <h2>最新消息</h2>
+        </div>
+        <a class="btn-ghost" href="https://moba.garena.tw/" target="_blank" rel="noopener">官方網站看全部公告<svg class="ext" viewBox="0 0 12 12" aria-hidden="true"><path d="M4 2h6v6M10 2 3.5 8.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></a>
+      </div>
+      <div class="news-tabs" id="newsTabs" role="tablist" aria-label="消息分類"></div>
+      <ul class="news-list" id="newsList" aria-live="polite"></ul>
+      <div class="news-more">
+        <button class="btn-ghost" id="newsMore" type="button">顯示更多</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 英雄與造型 ================= -->
+  <section class="section" id="heroes">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow mono">HEROES &amp; SKINS</p>
+          <h2>英雄與造型焦點</h2>
+        </div>
+        <a class="btn-ghost" href="https://moba.garena.tw/game/heroes" target="_blank" rel="noopener">前往英雄列表<svg class="ext" viewBox="0 0 12 12" aria-hidden="true"><path d="M4 2h6v6M10 2 3.5 8.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></a>
+      </div>
+
+      <div class="carousel" id="heroCarousel" aria-roledescription="輪播">
+        <div class="carousel-stage">
+          <div class="carousel-info" id="carouselInfo"></div>
+          <div class="carousel-art" id="carouselArt"></div>
+        </div>
+        <div class="carousel-controls">
+          <button class="btn-ghost btn-icon" id="carouselPrev" type="button" aria-label="上一位英雄">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 3 5 8l5 5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="carousel-dots" id="carouselDots" role="tablist" aria-label="輪播頁籤"></div>
+          <button class="btn-ghost btn-icon" id="carouselNext" type="button" aria-label="下一位英雄">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="m6 3 5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <h3 class="wall-title">英雄一覽 <span class="mono wall-note">113 位傳說者 · 點擊查看焦點</span></h3>
+      <div class="hero-wall" id="heroWall"></div>
+    </div>
+  </section>
+
+  <!-- ================= 遊戲資料 ================= -->
+  <section class="section" id="guide">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow mono">GAME GUIDE</p>
+          <h2>遊戲資料</h2>
+        </div>
+      </div>
+      <div class="guide-grid" id="guideGrid"></div>
+    </div>
+  </section>
+
+  <!-- ================= 電競影音 ================= -->
+  <section class="section" id="esports">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow mono">ESPORTS</p>
+          <h2>電競賽事</h2>
+        </div>
+      </div>
+      <div class="esports-links" id="esportsLinks"></div>
+      <div class="video-grid" id="videoGrid"></div>
+    </div>
+  </section>
+
+  <!-- ================= 漫畫橫幅 ================= -->
+  <section class="section section-tight" aria-label="傳說漫畫">
+    <div class="container">
+      <div class="comic-banner">
+        <img src="https://dlgarenanow-a.akamaihd.net/mgames/kgtw/Official%20website/2022/672358/AOV_Comic_S2C12_banner.jpg" alt="傳說漫畫 S2 第 12 話橫幅" referrerpolicy="no-referrer" loading="lazy">
+        <div class="comic-overlay">
+          <p class="eyebrow mono">LEGENDS COMIC</p>
+          <h3>傳說漫畫 · S2 第 12 話</h3>
+          <a class="btn-ghost" href="https://www.facebook.com/AoVTW/" target="_blank" rel="noopener">前往官方粉絲團追進度</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 下載 ================= -->
+  <section class="section" id="download">
+    <div class="container download-wrap">
+      <p class="eyebrow mono">DOWNLOAD</p>
+      <h2>立即加入傳說戰場</h2>
+      <p class="download-sub">與全台上億傳說者同場競技，免費遊玩。</p>
+      <div class="store-row">
+        <a class="btn-pill btn-white btn-store" href="https://apps.apple.com/tw/app/id1089079153" target="_blank" rel="noopener">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M11.6 8.5c0-1.5 1.2-2.2 1.3-2.3-.7-1-1.8-1.2-2.2-1.2-.9-.1-1.8.5-2.3.5-.5 0-1.2-.5-2-.5-1 0-2 .6-2.5 1.5-1.1 1.9-.3 4.7.8 6.2.5.8 1.1 1.6 1.9 1.6.8 0 1.1-.5 2-.5s1.2.5 2 .5 1.4-.8 1.9-1.5c.6-.9.8-1.7.9-1.8-.1 0-1.8-.7-1.8-2.5ZM10.1 3.8c.4-.5.7-1.2.6-1.9-.6 0-1.4.4-1.8.9-.4.5-.7 1.2-.6 1.9.7 0 1.4-.4 1.8-.9Z" fill="currentColor"/></svg>
+          <span><small>Download on the</small>App Store</span>
+        </a>
+        <a class="btn-pill btn-white btn-store" href="https://play.google.com/store/apps/details?id=com.garena.game.kgtw" target="_blank" rel="noopener">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M1.9.6 9.8 8 1.9 15.4c-.3-.2-.5-.6-.5-1V1.6c0-.4.2-.8.5-1Zm9 8.5 2.2 2.1-9.5 5.4 7.3-7.5Zm2.2-4.3L13.5 7 11.1 8l2.4-1 -0.4-3.2ZM3.6.4l9.5 5.4L10.9 8 3.6.4Z" fill="currentColor"/></svg>
+          <span><small>GET IT ON</small>Google Play</span>
+        </a>
+      </div>
+      <p class="download-note mono">免費遊玩 · 含商城服務｜未滿 18 歲之未成年使用者，需經由家長同意方可購買與使用商城服務。</p>
+    </div>
+  </section>
+</main>
+
+<!-- ================= Footer ================= -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a class="brand" href="#top">
+        <span class="brand-mark" aria-hidden="true">傳</span>
+        <span class="brand-text"><strong>傳說對決</strong><span class="brand-sub">ARENA OF VALOR</span></span>
+      </a>
+      <p class="footer-desc">十週年 · 競逐榮光。<br>本站為設計練習之概念改版，非官方站點。</p>
+      <div class="footer-social">
+        <a class="icon-ghost" href="https://www.facebook.com/AoVTW/" target="_blank" rel="noopener" aria-label="官方粉絲團">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M9.1 16V8.7h2.4l.4-2.8H9.1V4.1c0-.8.2-1.4 1.4-1.4h1.5V.1C11.7.1 10.8 0 9.8 0 7.6 0 6.1 1.3 6.1 3.8v2.1H3.7v2.8h2.4V16h3z" fill="currentColor"/></svg>
+        </a>
+        <a class="icon-ghost" href="https://www.youtube.com/channel/UCeMjhoCCvujpObnt6yeZeNg" target="_blank" rel="noopener" aria-label="官方 YouTube">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M15.7 4.6a2 2 0 0 0-1.4-1.4C13 2.8 8 2.8 8 2.8s-5 0-6.3.4A2 2 0 0 0 .3 4.6 21 21 0 0 0 0 8c0 1.2.1 2.3.3 3.4a2 2 0 0 0 1.4 1.4c1.3.4 6.3.4 6.3.4s5 0 6.3-.4a2 2 0 0 0 1.4-1.4c.2-1.1.3-2.2.3-3.4 0-1.2-.1-2.3-.3-3.4ZM6.4 10.6V5.4L10.6 8l-4.2 2.6Z" fill="currentColor"/></svg>
+        </a>
+      </div>
+    </div>
+    <nav class="footer-col" aria-label="遊戲資料">
+      <h4>遊戲資料</h4>
+      <a href="https://moba.garena.tw/game/locate" target="_blank" rel="noopener">新手引導</a>
+      <a href="https://moba.garena.tw/game/heroes" target="_blank" rel="noopener">英雄列表</a>
+      <a href="https://moba.garena.tw/game/props" target="_blank" rel="noopener">裝備列表</a>
+      <a href="https://moba.garena.tw/game/katha" target="_blank" rel="noopener">奧義列表</a>
+    </nav>
+    <nav class="footer-col" aria-label="電競賽事">
+      <h4>電競賽事</h4>
+      <a href="https://esports.moba.garena.tw/gcs" target="_blank" rel="noopener">GCS 職業聯賽</a>
+      <a href="https://esports.moba.garena.tw/city" target="_blank" rel="noopener">傳說城市賽</a>
+      <a href="https://acsesports.moba.garena.tw/" target="_blank" rel="noopener">ACS 校園聯賽</a>
+      <a href="https://moba.garena.tw/news/show/4677" target="_blank" rel="noopener">傳說國際賽</a>
+    </nav>
+    <nav class="footer-col" aria-label="社群">
+      <h4>社群</h4>
+      <a href="https://www.facebook.com/AoVTW/" target="_blank" rel="noopener">官方粉絲團</a>
+      <a href="https://www.youtube.com/channel/UCeMjhoCCvujpObnt6yeZeNg" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://moba.garena.tw/" target="_blank" rel="noopener">官方網站</a>
+    </nav>
+  </div>
+  <div class="container footer-legal">
+    <p>本站為非官方的設計練習概念站（Concept Redesign），與 Garena、騰訊及 Proxima Beta 無隸屬關係。遊戲名稱、新聞文案、英雄立繪與影音縮圖等素材版權歸原權利人所有，來源：moba.garena.tw（熱鏈引用，詳見 CREDITS）。設計語言：design-system-extraction-2026-10 · ZCode 暗色 Token 體系。</p>
+    <p class="mono colophon">TOKENS #161616 / #1C1C1C / #2A2A2A · ACCENT SKY-500 · HIGHLIGHT AMBER-500 · TYPE 60/700 · GEIST · GRID 88PX</p>
+  </div>
+</footer>
+
+<!-- ================= 英雄 Modal ================= -->
+<div class="modal" id="heroModal" hidden>
+  <div class="modal-overlay" data-close></div>
+  <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalName">
+    <button class="btn-ghost btn-icon modal-close" type="button" data-close aria-label="關閉">
+      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4 4 8 8M12 4l-8 8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+    <div class="modal-art"><img id="modalImg" src="" alt="" referrerpolicy="no-referrer"></div>
+    <div class="modal-info">
+      <p class="eyebrow mono" id="modalEyebrow">HERO</p>
+      <h3 id="modalName"></h3>
+      <p class="modal-sub" id="modalSub"></p>
+      <div class="modal-chips" id="modalChips"></div>
+      <a class="btn-ghost" id="modalLink" href="https://moba.garena.tw/game/heroes" target="_blank" rel="noopener">前往官方英雄列表</a>
+    </div>
+  </div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
